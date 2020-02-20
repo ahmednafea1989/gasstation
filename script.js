@@ -1,37 +1,14 @@
 $(document).ready(function () {
     var divEL;
     var liEL ;
-    //var type1;
-    
-        // $(document).on("click",".p3Click",function(){
-        //     console.log(this);
-        //     console.log($(this).attr("data-types"))
-        //     let typesStr = $(this).attr("data-types")
-        //     let typesArr = typesStr.split(",");
-            
-        //     divEL=$("<div>");
-        //      let ulEl =$("<ul>");
-        //      divEL.append(ulEl);
-        //      let targetDiv = $(this).closest(".showResult")
-        //      targetDiv.append(divEL);
-        //      for(j=0;j<typesArr.length;j++){
-                 
-        //          liEL = $("<li>");
-        //          liEL.addClass("service");
-        //          liEL.text(typesArr[j]);
-        //          ulEl.append(liEL);
-                 
-        //     }
-        // })
+   
         
         
         
         var $search = $("#button");
         
        
-        // var map;
-        // var service;
-        // var infowindow;
+      
         
         
         
@@ -40,8 +17,7 @@ $(document).ready(function () {
             getLocation();
             
            
-            // console.log(lot);
-            // console.log(log);
+            
             
             
             function getLocation() {
@@ -53,12 +29,7 @@ $(document).ready(function () {
                 
             }   
             function showPosition(position) {
-                // $("#tage").text("Latitude: " + position.coords.latitude +
-                // "<br>Longitude: " + position.coords.longitude);
-                // lot = position.coords.latitude;
-                // log = position.coords.longitude;
-                // console.log(lot);
-                // console.log(log);
+               
                 
                 
                 var berkeley = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
@@ -81,10 +52,7 @@ $(document).ready(function () {
                             createMarker(results[i]);
                             
                             
-                            //console.log(results[i].name);
-                            //console.log(results[i].icon);
-                            //console.log(results[i]. vicinity);
-                            //console.log(results[i].types);
+                           
                             var divEL1=$("<div>");
                             divEL1.addClass("showResult");
                            
@@ -111,11 +79,7 @@ $(document).ready(function () {
                             
 
                             
-                        //     var p3El=$("<button>");
-                        //     p3El.addClass("p3Click");
-                        //     p3El.attr("data-types", results[i].types)
-                        //     p3El.text("Click Here to Check What services we have?");
-                        //    divEL1 .append(p3El);
+                       
                             
                             
                             
@@ -148,9 +112,7 @@ $(document).ready(function () {
 
 
 
-        // //var $address = $(".address").val();
-        // //  console.log($address);
-        // //  console.log($city);
+       
 
 
 
